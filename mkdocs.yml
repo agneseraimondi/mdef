@@ -47,7 +47,7 @@ theme:
     accent: purple
   font:
     # See available fonts at https://fonts.google.com/
-    text: Poppins
+    text: BBH Sans Hegarty
     code: Cutive Mono
   icon:
     logo: material/memory
