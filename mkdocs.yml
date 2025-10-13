@@ -47,7 +47,7 @@ theme:
     accent: purple
   font:
     # See available fonts at https://fonts.google.com/
-    text: BBH Sans Hegarty
+    text: Source Serif 4
     code: Cutive Mono
   icon:
     logo: material/memory
