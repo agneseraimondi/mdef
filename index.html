@@ -67,11 +67,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#welcome" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -202,36 +197,9 @@
     <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
     
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Home
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-    
     <a href="." title="Home" class="md-nav__link md-nav__link--active">
       Home
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#welcome" class="md-nav__link">
-    Welcome
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
     
   </li>
 
@@ -419,34 +387,6 @@
               </div>
             
             
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#welcome" class="md-nav__link">
-    Welcome
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-                  </div>
-                </div>
-              </div>
-            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -458,9 +398,27 @@
                 
                   <h1>Home</h1>
                 
-                <h2 id="welcome">Welcome<a class="headerlink" href="#welcome" title="Permanent link">&para;</a></h2>
-<p><img alt="" src="../images/perezoso.jpg" /></p>
-<p>This is my MDEF personal website. </p>
+                <div class="home-container">
+
+  <!-- Sezione sinistra: immagine -->
+  <div class="home-left">
+    <img src="files/images/homeleft.jpg" alt="Background image" class="home-image">
+  </div>
+
+  <!-- Sezione destra: contenuti -->
+  <div class="home-right">
+    <div class="home-top">
+      <a href="about/me/" class="about-link">ABOUT</a>
+    </div>
+
+    <div class="home-content">
+      <div class="term-column"><a href="term1/">TERM 1</a></div>
+      <div class="term-column"><a href="#">TERM 2</a></div>
+      <div class="term-column"><a href="#">TERM 3</a></div>
+    </div>
+  </div>
+
+</div>
                 
                   
                     
@@ -469,7 +427,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 13, 2025 13:03:12 UTC">October 13, 2025</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 25, 2025 17:05:19 UTC">October 25, 2025</span>
     
   </small>
 </div>
