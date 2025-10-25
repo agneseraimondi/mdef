@@ -1,42 +1,87 @@
-:root>* {
+/* === HOME LAYOUT === */
 
-    --md-footer-bg-color: white;
-    --md-footer-fg-color: rgb(32, 32, 32);
-    --md-footer-bg-color--dark: white;
-    --md-footer-fg-color--lighter:  rgb(32, 32, 32);
-    --md-footer-fg-color--light:  rgb(32, 32, 32);
-    --mdc-typography-headline6-font-family: 'Be Vietnam', sans-serif;
-    --mdc-typography-font-family: 'Be Vietnam', sans-serif;
-    --md-typeset-a-color: rgb(12, 240, 190);
-
+.home-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
 }
 
-
-.hide-scroll-bar {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-  .hide-scroll-bar::-webkit-scrollbar {
-    display: none;
-  }
-
-  .md-typeset .md-button--primary {
-    border-width: 1px;
-    border-color: rgb(219, 219, 219);
-    border-radius: 4px;
-  }
-
-.cardContent {
-  padding: 16px;
-  font-size: 16px;
-  color: rgb(32, 32, 32);
+/* --- Lato sinistro: immagine --- */
+.home-left {
+  flex: 1;
+  background-color: #000;
 }
 
-.md-typeset h2 {
-    font-weight: 500;
+.home-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.mdc-typography--body2 {
-    font-weight: 300;
-    font-size: 14px;
+/* --- Lato destro: testo --- */
+.home-right {
+  flex: 1;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* --- Link ABOUT in alto a destra --- */
+.home-top {
+  position: absolute;
+  top: 2rem;
+  right: 3rem;
+}
+
+.about-link {
+  text-decoration: none;
+  color: #000;
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+}
+
+.about-link:hover {
+  text-decoration: underline;
+}
+
+/* --- Contenuto centrale: 3 colonne --- */
+.home-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.term-column a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #000;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+}
+
+.term-column a:hover {
+  text-decoration: underline;
+}
+
+/* --- Responsività --- */
+@media (max-width: 900px) {
+  .home-container {
+    flex-direction: column;
+  }
+  .home-left, .home-right {
+    flex: none;
+    width: 100%;
+    height: 50vh;
+  }
+  .home-content {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
 }
