@@ -1,20 +1,36 @@
+---
+hide:
+  - navigation
+  - toc
+  - footer
+  - header
+---
+
+<link rel="stylesheet" href="stylesheets/home.css">
+
 <div class="home-container">
 
-  <!-- Sezione sinistra: immagine -->
+  <!-- SEZIONE SINISTRA -->
   <div class="home-left">
-    <img src="files/images/homeleft.jpg" alt="Background image" class="home-image">
+    <img src="files/images/home-left.jpg" alt="Homepage image" class="home-image">
+    <div class="home-left-top">MDEF</div>
+    <div class="home-left-bottom">25/26</div>
   </div>
 
-  <!-- Sezione destra: contenuti -->
+  <!-- SEZIONE DESTRA -->
   <div class="home-right">
-    <div class="home-top">
-      <a href="about/me/" class="about-link">ABOUT</a>
+    <div class="home-right-top">AGNESE RAIMONDI</div>
+
+    <div class="home-right-center">
+      <a href="term1/" class="term-link">TERM 1</a>
+      <a href="#" class="term-link">TERM 2</a>
+      <a href="#" class="term-link">TERM 3</a>
     </div>
 
-    <div class="home-content">
-      <div class="term-column"><a href="term1/">TERM 1</a></div>
-      <div class="term-column"><a href="#">TERM 2</a></div>
-      <div class="term-column"><a href="#">TERM 3</a></div>
+    <div class="home-right-bottom">
+      <a href="about/me/" class="bottom-link">ABOUT</a>
+      <a href="#" class="bottom-link">CONTACT</a>
+      <a href="#" class="bottom-link">PORTFOLIO</a>
     </div>
   </div>
 

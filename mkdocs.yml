@@ -41,6 +41,15 @@ extra:
 
 theme:
   name: material
+  custom_dir: custom_theme
+  features:
+    - navigation.tabs
+    - navigation.top
+  hide:
+    - navigation
+    - toc
+
+  name: material
   palette:
     # try other colors https://squidfunk.github.io/mkdocs-material/getting-started/#primary-colors
     primary: red
@@ -112,5 +121,7 @@ markdown_extensions:
   - attr_list
 
 extra_css:
+
+  - stylesheets/home.css
   - stylesheets/extra.css
   - https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css
